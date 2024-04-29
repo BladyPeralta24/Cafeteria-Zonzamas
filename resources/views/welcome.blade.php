@@ -27,9 +27,40 @@
             </div>
         </section>
         <section class="third">
-            Tercera sección
+            <div class="box-container">
+                <div class="box">
+                    <div class="text-box">
+                        <h1>Elige</h1><br>
+                        <p>
+                            Elige el producto a traves del menu de la cafeteria,
+                            con sus precios marcados.
+                        </p>
+                    </div>
+                    <img class="img-elegir" src="{{asset('img/elegir.png')}}" alt="elegir">
+                </div>
+                <div class="box">
+                    <div class="text-box">
+                        <h1>Reserva</h1><br>
+                        <p>
+                            Reserva el producto que deseas, indicando la hora
+                            a la que deseas recogerlo.
+                        </p>
+                    </div>
+                    <img class="img-reservar" src="{{asset('img/reserva.png')}}" alt="reservar">
+                </div>
+                <div class="box">
+                    <div class="text-box">
+                        <h1>Recoge</h1><br>
+                        <p>
+                            Recoge tu producto en la hora indicada, sin tener
+                            que esperar colas.
+                        </p>
+                    </div>
+                    <img class="img-recoger" src="{{asset('img/recoger.png')}}" alt="recoger">
+            </div>
         </section>
         <section class="fourth">
             Cuarta sección
         </section>
+
 @endsection

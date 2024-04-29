@@ -117,7 +117,7 @@ section{
 
 
 
-
+/*Primera seccion*/
 .one{
     /* background-image: url('/img/fotos/edificio.jpeg');
     background-size: cover;
@@ -131,6 +131,7 @@ section{
     height: 100%;
 }
 
+/*Segunda seccion*/
 .second{
     background-color: #f5f5f5;
     color: black;
@@ -172,10 +173,69 @@ section{
 
 }
 
+/*Tercera seccion*/
 .third{
-    background-color: cornflowerblue;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
 }
 
+.third > .box-container{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid white; */
+    gap: 20px;
+}
+
+.box-container > .box{
+    border-radius: 50px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.text-box{
+    height: 70%;
+}
+.text-box > h1{
+    border: 1px solid black;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: 25%;
+}
+
+.text-box > p{
+    margin: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+.img-elegir,
+.img-reservar,
+.img-recoger{
+    height: 200px;
+    width: auto;
+}
+
+
+
+/*Cuarta seccion*/
 .fourth{
     background-color: darkcyan;
 }
