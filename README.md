@@ -27,13 +27,12 @@ Este proyecto a sido creado por:
 - Bladimir Peralta Herrera
 
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
 ## 🛠 Skills
 Javascript, HTML, CSS...
 
 FrameWorks: Laravel, Vue.js
 
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
