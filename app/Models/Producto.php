@@ -15,4 +15,9 @@ class Producto extends Model
         'nombre',
         'precio_unitario',
     ];
+
+    public function categoria()
+    {
+        return $this->belongsTo('App\Models\Categoria', 'id_categoria', 'id_categoria');
+    }
 }
