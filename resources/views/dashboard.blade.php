@@ -13,15 +13,18 @@
                 </div>
                 <br/>
                 @foreach ($categorias as $categoria)
-                <h2 class="text-center text-4xl font-bold bg-white p-3 rounded-md mx-auto w-1/2">{{ $categoria->nombre }}</h2>
-                    @foreach ($categoria->productos as $producto)
-                        <div class="card bg-white rounded-lg shadow-md custom-card m-4">
-                            <div class="card-body p-6">
-                                <h5 class="card-title text-lg font-semibold text-black">{{ $producto->nombre }}</h5>
-                                <p class="card-text text-gray-600">{{$producto->precio_unitario }} €</p>
+                    <h2 class="text-center text-4xl font-bold bg-white p-3 rounded-md mx-auto w-1/2">{{ $categoria->nombre }}</h2>
+                    <div class="flex flex-wrap justify-around">
+                        @foreach ($categoria->productos as $producto)
+                            <div class="card bg-white rounded-lg shadow-md custom-card m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+                                <div class="card-body p-6">
+                                    <h5 class="card-title text-lg font-semibold text-black">{{ $producto->nombre }}</h5>
+                                    <p class="card-text text-gray-600">{{$producto->precio_unitario }} €</p>
+                                    <p class="card-category text-gray-600">{{$producto->categoria ? $producto->categoria->nombre : 'Sin categoría' }}</p>
+                                </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 @endforeach
                 {{-- <div class="card-container justify-center gap-4 p-4 flex flex-col">
                     @foreach ($productos as $producto)
