@@ -59,8 +59,5 @@
                     <img class="img-recoger" src="{{asset('img/recoger.png')}}" alt="recoger">
             </div>
         </section>
-        <section class="fourth">
-            Cuarta sección
-        </section>
 
 @endsection

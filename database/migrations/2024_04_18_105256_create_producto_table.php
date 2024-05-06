@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nombre', 100);
             $table->decimal('precio_unitario', 10, 2);
             $table->integer('stock');
+            $table->string('imagen', 500);
             $table->unsignedBigInteger('id_categoria');
             $table->unsignedBigInteger('cod_estanteria');
             $table->unsignedBigInteger('cod_almacen');
