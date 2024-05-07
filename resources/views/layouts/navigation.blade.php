@@ -18,6 +18,16 @@
                 </div>
             </div>
 
+            {{-- aquí va una imagen png de un carrito que servira para almacenar los productos almacenados --}}
+            <div class="carrito-reserva shrink-0 flex items-center">
+                <a href="{{ route('dashboard')}}">
+                    <x-carrito class="block h-9 w-auto fill-current text-gray-800" />
+                    @if (session('cart'))
+                        <span class="badge badge-warning" id="cart-count">{{ count(session('cart')) }}</span>
+                    @endif
+                </a>
+            </div>
+
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
@@ -32,6 +42,8 @@
                             </div>
                         </button>
                     </x-slot>
+
+
 
                     <x-slot name="content">
                         <x-dropdown-link :href="route('profile.edit')">

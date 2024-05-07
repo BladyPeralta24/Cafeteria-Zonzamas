@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
+use App\Models\Producto;
 
 class ProfileController extends Controller
 {
@@ -26,6 +27,7 @@ class ProfileController extends Controller
      */
     public function update(ProfileUpdateRequest $request): RedirectResponse
     {
+
         $request->user()->fill($request->validated());
 
         if ($request->user()->isDirty('email')) {
@@ -56,5 +58,11 @@ class ProfileController extends Controller
         $request->session()->regenerateToken();
 
         return Redirect::to('/');
+    }
+
+    public function show()
+    {
+        $producto = Producto::find(1); // obtén el producto de alguna manera
+        return view('profile', ['producto' => $producto]);
     }
 }

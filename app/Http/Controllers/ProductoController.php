@@ -23,4 +23,9 @@ class ProductoController extends Controller
 
 
     }
+    public function detalles(Producto $producto)
+    {
+        $producto = Producto::findOrFail($producto->id_producto);
+        return view('producto.detalles', ['producto' => $producto]);
+    }
 }
