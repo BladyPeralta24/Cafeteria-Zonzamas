@@ -1,0 +1,206 @@
+/* ===== Base ===== */
+html {
+    font-family: Figtree, system-ui, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ===== Cabecera ===== */
+header {
+    border-bottom: 3px solid black;
+}
+
+.custom-navbar {
+    background-color: rgb(221, 184, 106);
+    padding: 0.4rem 0.5rem;
+}
+
+.img-logo {
+    height: 70px;
+    width: auto;
+}
+
+.icono-usuario {
+    height: 1.2em;
+    width: auto;
+    vertical-align: text-bottom;
+}
+
+/* Botones en forma de píldora (enlaces y <button>) */
+.btn-pill {
+    display: inline-block;
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    padding: 0.6rem 1.1rem;
+    border-radius: 30px;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.btn-pill:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.btn-pill-button {
+    font-family: inherit;
+}
+
+.btn-grande {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.8rem;
+}
+
+/* ===== Footer ===== */
+.bg-body-tertiary {
+    color: #fff;
+    background-color: #2B3035;
+}
+
+.icono-red-social {
+    height: 25px;
+    width: auto;
+    filter: invert(1);
+}
+
+.icono-empresa {
+    height: 20px;
+    width: auto;
+    filter: invert(1);
+}
+
+.icono-zonzamas {
+    height: 30px;
+    width: auto;
+    filter: invert(1);
+}
+
+/* ===== Sección 1: portada con vídeo ===== */
+.one {
+    position: relative;
+    height: calc(100vh - 6rem);
+    min-height: 420px;
+    overflow: hidden;
+    background-color: #8a4514;
+    font-family: fantasy;
+}
+
+.one > video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.one-texto {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    color: white;
+}
+
+.one-texto h1 {
+    font-size: clamp(2.8rem, 9vw, 8rem);
+    line-height: 1.05;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1.5rem;
+}
+
+/* ===== Sección 2: servicio de reserva ===== */
+.second {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.second-texto {
+    flex: 1 1 360px;
+    max-width: 640px;
+}
+
+.second-texto h1 {
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+}
+
+.second-texto p {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+.second-imagenes {
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.second-imagenes img {
+    max-width: 100%;
+    height: auto;
+    max-height: 320px;
+}
+
+/* ===== Sección 3: Elige / Reserva / Recoge ===== */
+.third {
+    background-color: #f5f5f5;
+    padding: 2rem 2rem 4rem;
+}
+
+.third > .box-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.box-container > .box {
+    border-radius: 50px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    gap: 1rem;
+}
+
+.text-box h2 {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 2.2rem;
+    padding: 0.2rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-box p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.img-elegir,
+.img-reservar,
+.img-recoger {
+    height: 180px;
+    width: auto;
+}

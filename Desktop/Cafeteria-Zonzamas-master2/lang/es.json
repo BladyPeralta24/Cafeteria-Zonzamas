@@ -1,0 +1,23 @@
+{
+    "A new verification link has been sent to the email address you provided during registration.": "Se ha enviado un nuevo enlace de verificación al correo que indicaste al registrarte.",
+    "A new verification link has been sent to your email address.": "Se ha enviado un nuevo enlace de verificación a tu correo electrónico.",
+    "Already registered?": "¿Ya tienes cuenta?",
+    "Click here to re-send the verification email.": "Pulsa aquí para reenviar el correo de verificación.",
+    "Confirm": "Confirmar",
+    "Confirm Password": "Confirmar contraseña",
+    "Email": "Correo electrónico",
+    "Email Password Reset Link": "Enviar enlace para restablecer la contraseña",
+    "Forgot your password?": "¿Has olvidado tu contraseña?",
+    "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "¿Has olvidado tu contraseña? No pasa nada. Indícanos tu correo y te enviaremos un enlace para elegir una nueva.",
+    "Log in": "Iniciar sesión",
+    "Log Out": "Cerrar sesión",
+    "Name": "Nombre",
+    "Password": "Contraseña",
+    "Register": "Registrarse",
+    "Remember me": "Recordarme",
+    "Resend Verification Email": "Reenviar correo de verificación",
+    "Reset Password": "Restablecer contraseña",
+    "Telephone": "Teléfono",
+    "This is a secure area of the application. Please confirm your password before continuing.": "Esta es una zona segura. Confirma tu contraseña antes de continuar.",
+    "Your email address is unverified.": "Tu correo electrónico no está verificado."
+}

@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Oculta los elementos de Alpine hasta que se inicializa (evita parpadeos). */
+[x-cloak] {
+    display: none !important;
+}
